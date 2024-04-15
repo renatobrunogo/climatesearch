@@ -15,6 +15,16 @@ body {
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
 }
 
+.nome-sistema {
+    font-size: 50px;
+    position: absolute;
+    top: 50px;
+    color: #0a2338;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto mono';
+}
+
 .caixa-maior {
     background-color: #000000;
     opacity: 0.8;
