@@ -15,14 +15,28 @@ body {
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
 }
 
+.destaque-nome-sistema {
+    background-color: #0a2338;
+    opacity: 0.6;
+    border: 2px solid #0a2338; /* Cor da borda */
+    padding: 10px; /* Espaçamento interno */
+    display: inline-block; /* Exibe a div como um bloco inline */
+    border-radius: 25px; /* Raio da borda */
+    position: fixed; /* Fixa o elemento na tela */
+    top: 15%; /* Posiciona no topo */
+    left: 50%; /* Posiciona centralizado horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
 .nome-sistema {
-    font-size: 50px;
-    position: absolute;
+    font-size: 30px;
+    /*position: absolute;*/
     top: 50px;
-    color: #0a2338;
+    color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Roboto mono';
+
 }
 
 .caixa-maior {
