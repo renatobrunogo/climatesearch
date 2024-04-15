@@ -18,7 +18,7 @@
 <body>
     <h1 class="nome-sistema">Climate Search - Encontre seu clima :)</h1>
     <div class="caixa-maior">
-        <input class="input-cidade" placeholder="Digite a cidade">
+        <input class="input-cidade" id="cityInput" placeholder="Digite a cidade">
         <button class="botao-busca" onclick="cliqueNoBotao()">
             <img class="img-busca" alt="busca" src="https://www.svgrepo.com/show/488200/find.svg">
         </button>
@@ -38,6 +38,19 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var cityInput = document.getElementById('cityInput');
+
+            cityInput.addEventListener('keypress', function(event) {
+                if (event.key === 'Enter') {
+                    // Se a tecla pressionada for "Enter", chama a função de clique no botão
+                    cliqueNoBotao();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
