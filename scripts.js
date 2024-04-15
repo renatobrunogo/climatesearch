@@ -11,7 +11,7 @@ function colocarDadosNaTela(dados) {
     document.querySelector(".img-previsao").src=`https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
 }
 
-async function buscarCidade(cidade) {
+async function buscarCidade(cidade, key) {
     const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${key}&lang=pt_br&units=metric`).then(response => response.json())
 
     colocarDadosNaTela(dados)
@@ -20,5 +20,5 @@ async function buscarCidade(cidade) {
 function cliqueNoBotao() {
     const cidade = document.querySelector(".input-cidade").value
 
-    buscarCidade(cidade)
+    buscarCidade(cidade, key)
 }
