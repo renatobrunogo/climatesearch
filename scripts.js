@@ -1,6 +1,6 @@
+require('dotenv').config();
 
-
-const key = "4a78c2e634f80be066c1026e2e911ef4"
+const key = process.env.api_key;
 
 function colocarDadosNaTela(dados) {
     console.log(dados)
