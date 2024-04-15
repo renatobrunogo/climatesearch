@@ -16,6 +16,7 @@ async function colocarDadosNaTela(dados) {
     document.querySelector(".texto-previsao").innerHTML = dados.weather[0].description;
     document.querySelector(".umidade").innerHTML = dados.main.humidity + "%";
     document.querySelector(".img-previsao").src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`;
+    document.querySelector(".img-umidade").src = "https://www.svgrepo.com/show/521708/humidity.svg";
 }
 
 async function buscarCidade(cidade, key) {

@@ -51,6 +51,7 @@ body {
 
 .caixa-media {
     margin-top: 30px;
+    align-items: center;
 }
 
 .cidade {
@@ -77,9 +78,20 @@ body {
     text-transform: capitalize;
 }
 
+.caixa-minima {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .umidade {
     color: #ffffff;
-    margin-top: 20px;
+    margin-left: 50px;
+}
+.img-umidade {
+    width: 20px;
+    margin-left: 20px;
+    background-color: aqua;
 }
 
 
