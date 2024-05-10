@@ -20,7 +20,7 @@ body {
     opacity: 0.6;
     border: 2px solid #0a2338; /* Cor da borda */
     padding: 10px; /* Espaçamento interno */
-    display: inline-block; /* Exibe a div como um bloco inline */
+    display: flex; /* Exibe a div como um bloco inline */
     border-radius: 25px; /* Raio da borda */
     position: fixed; /* Fixa o elemento na tela */
     top: 15%; /* Posiciona no topo */
@@ -29,7 +29,7 @@ body {
 }
 
 .nome-sistema {
-    font-size: 30px;
+    font-size: 20px;
     /*position: absolute;*/
     top: 50px;
     color: #ffffff;
@@ -116,6 +116,33 @@ body {
     width: 20px;
     margin-left: 20px;
     background-color: aqua;
+}
+
+.dados-desenvolvedor {
+    position: fixed;
+    bottom: 10px;
+    align-items: center;
+    background-color: #000000;
+    text-align: center;
+    max-width: 140px;
+    border-radius: 15px;
+    opacity: 0.9;
+    
+
+}
+
+.legenda-desenvolvedor {
+    
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.logo-desenvolvedor {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+
 }
 
 
