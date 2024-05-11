@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 body {
@@ -20,7 +19,7 @@ body {
     opacity: 0.6;
     border: 2px solid #0a2338; /* Cor da borda */
     padding: 10px; /* Espaçamento interno */
-    display: inline-block; /* Exibe a div como um bloco inline */
+    display: flex; /* Exibe a div como um bloco inline */
     border-radius: 25px; /* Raio da borda */
     position: fixed; /* Fixa o elemento na tela */
     top: 15%; /* Posiciona no topo */
@@ -29,14 +28,13 @@ body {
 }
 
 .nome-sistema {
-    font-size: 30px;
+    font-size: 20px;
     /*position: absolute;*/
     top: 50px;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Roboto mono';
-
 }
 
 .caixa-maior {
@@ -112,10 +110,31 @@ body {
     color: #ffffff;
     margin-left: 50px;
 }
+
 .img-umidade {
     width: 20px;
     margin-left: 20px;
     background-color: aqua;
 }
 
+.dados-desenvolvedor {
+    position: fixed;
+    bottom: 10px;
+    align-items: center;
+    background-color: #000000;
+    text-align: center;
+    max-width: 120px;
+    border-radius: 15px;
+    opacity: 0.7;   
+}
 
+.legenda-desenvolvedor {
+    font-size: 10px;
+    color: rgb(227, 231, 243);
+}
+
+.logo-desenvolvedor {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
